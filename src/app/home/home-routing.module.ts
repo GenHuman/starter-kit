@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { extract } from '@app/core';
 import { HomeComponent } from './home.component';
 import { Shell } from '@app/shell/shell.service';
+import { CvComponent } from '../cv/cv.component';
 
 const routes: Routes = [
   Shell.childRoutes([
@@ -17,4 +18,4 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: []
 })
-export class HomeRoutingModule { }
+export class HomeRoutingModule {}

@@ -1,6 +1,7 @@
 {
-  "APP_NAME": "ngX-Rocket",
-  "About": "About",
+  "APP_NAME": "LongHairedCoder",
+  "About me": "About me",
+  "Cv": "CV",
   "Hello world !": "Hello world !",
   "Home": "Home",
   "Logged in as": "Logged in as",
@@ -12,5 +13,9 @@
   "Username is required": "Username is required",
   "Username or password incorrect.": "Username or password incorrect.",
   "Remember me": "Remember me",
-  "Version": "Version"
+  "Hi!": "Hi!",
+  "Hello!": "Hello!",
+  "What's up!": "What's up!",
+  "Version": "Version",
+  "Projects": "Projects"
 }

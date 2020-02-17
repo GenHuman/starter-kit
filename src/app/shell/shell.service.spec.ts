@@ -1,21 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { AuthenticationGuard, AuthenticationService } from '@app/core';
+import { FirstTimeGuard, FirstTimeService } from '@app/core';
 import { MockAuthenticationService } from '@app/core/authentication/authentication.service.mock';
 import { ShellComponent } from './shell.component';
 import { Shell } from './shell.service';
 
 describe('Shell', () => {
-
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        ShellComponent
-      ],
-      providers: [
-        AuthenticationGuard,
-        { provide: AuthenticationService, useClass: MockAuthenticationService },
-      ]
+      declarations: [ShellComponent],
+      providers: [FirstTimeGuard, { provide: FirstTimeService, useClass: MockAuthenticationService }]
     });
   });
 

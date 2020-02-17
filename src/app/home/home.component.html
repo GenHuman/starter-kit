@@ -1,10 +1,26 @@
 <div class="container-fluid">
-  <div class="jumbotron text-center">
+  <div class="jumbotron text-center typewriter row">
+    <img class="logo col-4" src="assets/Face.png" alt="me" />
+
     <h1>
-      <img class="logo" src="assets/ngx-rocket-logo.png" alt="angular logo"/>
       <span translate>Hello world !</span>
     </h1>
     <app-loader [isLoading]="isLoading"></app-loader>
-    <q [hidden]="isLoading">{{quote}}</q>
+    <q [hidden]="isLoading">{{ quote }}</q>
+  </div>
+  <h2>TEST</h2>
+
+  <div class="card-container">
+    <ng-container>
+      <a class="card" target="_blank" rel="noopener">
+        <span translate>Hi!</span>
+      </a>
+      <a class="card" target="_blank" rel="noopener">
+        <span translate>Hello!</span>
+      </a>
+      <a class="card" target="_blank" rel="noopener">
+        <span translate>What's up!</span>
+      </a>
+    </ng-container>
   </div>
 </div>

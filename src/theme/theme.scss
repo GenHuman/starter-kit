@@ -3,3 +3,19 @@
  * Framework overrides and customization goes here.
  */
 
+.active {
+  color: $color5 !important;
+}
+
+.show > .nav-link,
+.active > .nav-link,
+.nav-link.show,
+.nav-link.active {
+  color: $color5 !important;
+}
+
+.navbar-dark {
+  .navbar-brand {
+    color: $color5 !important;
+  }
+}

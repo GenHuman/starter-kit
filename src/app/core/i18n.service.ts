@@ -4,7 +4,7 @@ import { Subscription } from 'rxjs';
 
 import { Logger } from './logger.service';
 import enUS from '../../translations/en-US.json';
-import frFR from '../../translations/fr-FR.json';
+import esES from '../../translations/es-ES.json';
 
 const log = new Logger('I18nService');
 const languageKey = 'language';
@@ -23,7 +23,6 @@ export function extract(s: string) {
   providedIn: 'root'
 })
 export class I18nService {
-
   defaultLanguage!: string;
   supportedLanguages!: string[];
 
@@ -32,7 +31,7 @@ export class I18nService {
   constructor(private translateService: TranslateService) {
     // Embed languages to avoid extra HTTP requests
     translateService.setTranslation('en-US', enUS);
-    translateService.setTranslation('fr-FR', frFR);
+    translateService.setTranslation('es-ES', esES);
   }
 
   /**
@@ -47,8 +46,9 @@ export class I18nService {
     this.language = '';
 
     // Warning: this subscription will always be alive for the app's lifetime
-    this.langChangeSubscription = this.translateService.onLangChange
-      .subscribe((event: LangChangeEvent) => { localStorage.setItem(languageKey, event.lang); });
+    this.langChangeSubscription = this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      localStorage.setItem(languageKey, event.lang);
+    });
   }
 
   /**
@@ -93,5 +93,4 @@ export class I18nService {
   get language(): string {
     return this.translateService.currentLang;
   }
-
 }
