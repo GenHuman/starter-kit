@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
 
 import { ShellComponent } from './shell.component';
 import { HeaderComponent } from './header/header.component';
-import { AngularMaterialCheckboxComponent } from '../angular-material-checkbox/angular-material-checkbox.component';
+
 import { MaterialModule } from '../material/material.module';
 
 @NgModule({
