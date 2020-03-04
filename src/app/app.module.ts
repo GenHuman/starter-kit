@@ -18,7 +18,6 @@ import { WelcomeModule } from './welcome/welcome.module';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { MaterialModule } from './material/material.module';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -39,7 +38,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     WelcomeModule,
     CvModule,
     ProjectsModule,
-    MaterialModule,
     AppRoutingModule // must be imported as the last module as it contains the fallback route
   ],
   declarations: [AppComponent],

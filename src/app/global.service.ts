@@ -15,4 +15,8 @@ export class GlobalService {
   toggleGuide() {
     this.guideEnabled = !this.guideEnabled;
   }
+
+  changeGuide(a: boolean) {
+    this.guideEnabled = a;
+  }
 }

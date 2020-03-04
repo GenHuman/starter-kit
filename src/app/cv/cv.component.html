@@ -1,43 +1,36 @@
 <div class="container-fluid">
   <div class="row ">
-    <div class=" col-md-8  text-center">
+    <div class=" col-md-1 "></div>
+    <div class=" col-md-7  text-center">
       <div class=" col-md-12 jumbotron ">
         <h1>
           <span translate>EXPERIENCE</span>
         </h1>
         <div class="row">
           <div class="col-1"></div>
-          <img class="col-3 " src="assets/Altran_logo.png" alt="Altran Logo" />
-          <h5 class="col-4" translate>CONSULTANT_JR</h5>
+          <img class="col-3 logo" src="assets/Altran_logo.png" alt="Altran Logo" />
+          <h4 class="col-4" translate>CONSULTANT_JR</h4>
         </div>
         <a translate>INTERNSHIP</a>
         <br />
         <a translate>DEVELOPMENT</a>
         <br />
         <b> <a translate>DURATION</a>: </b>
-        <a>ALTRAN_DURATION</a>
+        <a translate>ALTRAN_DURATION</a>
         <hr />
         <div class="row ">
           <div class="col-3"></div>
-          <img class="col-1 vcenter" src="assets/EA_logo_Electronic_Arts.png" alt="Altran Logo" />
-          <div class="col-4"><h5 class="vcenter">COMPLIANCE_CERT_TESTER</h5></div>
+          <img class="col-1 vcenter logo" src="assets/EA_logo_Electronic_Arts.png" alt="EA Logo" />
+          <div class="col-4"><h4 class="vcenter" translate>COMPLIANCE_CERT_TESTER</h4></div>
         </div>
-        <a translate>INTERNSHIP</a>
+        <a translate>EA_JOB</a>
         <br />
         <b> <a translate>DURATION</a>: </b>
-        <a>EA_DURATION</a>
+        <a translate>EA_DURATION</a>
       </div>
     </div>
-    <button
-      type="button"
-      class="btn btn-lg btn-danger"
-      data-toggle="popover"
-      title="Popover title"
-      data-content="And here's some amazing content. It's very engaging. Right?"
-    >
-      Click to toggle popover
-    </button>
-    <div class=" col-md-4  text-center">
+
+    <div class=" col-md-3  text-center">
       <div class=" col-md-12 jumbotron ">
         <h1>
           <span translate>CONTACT</span>
@@ -45,18 +38,19 @@
         <h5>Julio Albertos León</h5>
         <hr />
         <b> <a translate>EMAIL</a>: </b>
-        <a>julio.albertosleon@gmail.com</a>
+        <a href="mailto:julio.albertosleon@gmail.com">julio.albertosleon@gmail.com</a>
         <hr />
         <b> <a translate>WEB</a>: </b>
         <a>longhairedcoder.net</a>
         <hr />
         <b> <a translate>PHONE_NUMBER</a>: </b>
-        <a>+34 669 240 028</a>
+        <a href="tel:+34669240028">+34 669 240 028</a>
       </div>
     </div>
   </div>
   <div class="row ">
-    <div class=" col-md-6  text-center">
+    <div class=" col-md-1 "></div>
+    <div class=" col-md-5  text-center">
       <div class=" col-md-12 jumbotron ">
         <h1>
           <span translate>SKILLS</span>
@@ -65,287 +59,325 @@
           <div class="popover__content">
             <p class="popover__message">Joseph Francis "Joey" Tribbiani, Jr.</p>
           </div>-->
-        <b class="popover__title"> <a translate>FLEXIBILITY</a> </b>
-
-        <div class="row skillsrow">
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar bg-info"
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+        <ng-template #popContent1 translate><a translate>ADAPTABILITY_DEF</a></ng-template>
+        <div [ngbPopover]="popContent1" triggers="mouseenter:mouseleave">
+          <b> <a translate>ADAPTABILITY</a> </b>
+          <div class="row skillsrow">
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
-          </div>
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar bg-info"
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
-          </div>
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar bg-info"
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
-          </div>
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar bg-info"
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
-          </div>
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar bg-info"
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 50%"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
           </div>
         </div>
         <!--</div>-->
         <hr />
-        <b class=""> <a translate>DEBUGGING</a> </b>
-        <div class="row skillsrow">
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+        <ng-template #popContent2 translate><a translate>COMMUNICATION_DEF</a></ng-template>
+        <div [ngbPopover]="popContent2" triggers="mouseenter:mouseleave">
+          <b class=""> <a translate>COMMUNICATION</a> </b>
+          <div class="row skillsrow">
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
-          </div>
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar "
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar "
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
-          </div>
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar "
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar "
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
-          </div>
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar "
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar "
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
-          </div>
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar "
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-        </div>
-        <hr />
-        <b class=""> <a translate>FLEXIBILITY</a> </b>
-        <div class="row skillsrow">
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar bg-info"
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar bg-info"
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar bg-info"
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar bg-info"
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-          </div>
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar bg-info"
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar "
+                  role="progressbar"
+                  style="width: 0%"
+                  aria-valuenow="0"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
           </div>
         </div>
         <hr />
-        <b class=""> <a translate>DEBUGGING</a> </b>
-        <div class="row skillsrow">
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+        <ng-template #popContent3 translate><a translate>PROBLEM-SOLVING_DEF</a></ng-template>
+        <div [ngbPopover]="popContent3" triggers="mouseenter:mouseleave">
+          <b class=""> <a translate>PROBLEM-SOLVING</a> </b>
+          <div class="row skillsrow">
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
           </div>
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar "
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+        </div>
+        <hr />
+        <ng-template #popContent4><a translate>DEBUGGING_DEF</a></ng-template>
+        <div [ngbPopover]="popContent4" triggers="mouseenter:mouseleave">
+          <b class=""> <a translate>DEBUGGING</a> </b>
+          <div class="row skillsrow">
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
-          </div>
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar "
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar "
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
-          </div>
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar "
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar "
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
-          </div>
-          <div class="col progresscol">
-            <div class="progress ">
-              <div
-                class="progress-bar "
-                role="progressbar"
-                style="width: 100%"
-                aria-valuenow="100"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar "
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="col progresscol">
+              <div class="progress ">
+                <div
+                  class="progress-bar "
+                  role="progressbar"
+                  style="width: 50%"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class=" col-md-6  text-center">
+    <div class=" col-md-5  text-center">
       <div class=" col-md-12 jumbotron ">
         <h1>
           <span translate>STUDIES</span>
         </h1>
         <div class="row">
-          <div class="col-1"></div>
-          <img class="col-3 " src="assets/uc3m.png" alt="Altran Logo" />
-          <h5 class="col-4" translate>UC3M</h5>
+          <div class=""></div>
+          <img class="col-3 vcenter logo" src="assets/uc3m.png" alt="uc3m Logo" />
+          <h5 class="col-6" translate>UC3M</h5>
         </div>
-        <a translate>DEGREE</a>
+        <a translate href="https://www.uc3m.es/bachelor-degree/computer-science">DEGREE</a>
         <br />
 
         <b> <a translate>DURATION</a>: </b>
-        <a>UNI_DURATION</a>
+        <a translate>UNI_DURATION</a>
         <hr />
 
-        <h5 class="vcenter">ERASMUS_NAME</h5>
+        <h5 class="vcenter" translate>ERASMUS_NAME</h5>
         <br />
         <b> <a translate>DURATION</a>: </b>
-        <a>ERASMUS_DURATION</a>
+        <a translate>ERASMUS_DURATION</a>
+        <hr />
+        <h5 translate>LANGUAGES</h5>
+        <p>
+          <b> <a translate>SPANISH</a>: </b> <a translate>NATIVE</a>
+        </p>
+        <p>
+          <b> <a translate>ENGLISH</a>: </b> <a translate>PROFICIENT</a>
+        </p>
       </div>
     </div>
   </div>
 </div>
+<button
+  [hidden]="currentLanguage !== 'es-ES'"
+  style="float:right"
+  class="btn btn-secondary"
+  onclick="window.open('/assets/uc3m.png','_blank')"
+>
+  <i class="fas fa-file-pdf" style="margin-right: 0.5vw;"></i>
+  Descargar CV simplificado
+</button>
+
+<button
+  [hidden]="currentLanguage !== 'en-US'"
+  style="float:right"
+  class="btn btn-secondary"
+  onclick="window.open('/assets/Face.png','_blank')"
+>
+  <i class="fas fa-file-pdf" style="margin-right: 0.5vw;"></i>
+  Download Simplified CV
+</button>

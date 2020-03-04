@@ -1,9 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { GlobalService } from '../../global.service';
+//import { GlobalService } from '../../global.service';
 import { FormsModule } from '@angular/forms';
 
-import { FirstTimeGuard, FirstTimeService, I18nService } from '@app/core';
+import { FirstTimeGuard, FirstTimeService, I18nService, GlobalService } from '@app/core';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +12,7 @@ import { FirstTimeGuard, FirstTimeService, I18nService } from '@app/core';
 })
 export class HeaderComponent implements OnInit {
   menuHidden = true;
-  @Input() guideEnabled: boolean;
+  localguide: boolean;
 
   constructor(
     private router: Router,
@@ -23,10 +23,11 @@ export class HeaderComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    if (!localStorage.noFirstVisit) {
+    /*if (this.globalService.isFirstTime()) {
       localStorage.guideEnabled = true;
     }
-    this.guideEnabled = localStorage.guideEnabled;
+    this.globalService.changeGuide(localStorage.guideEnabled);*/
+    this.localguide = this.globalService.isGuideEnabled();
   }
 
   toggleMenu() {
@@ -41,13 +42,13 @@ export class HeaderComponent implements OnInit {
     this.authenticationService.logout().subscribe(() => this.router.navigate(['/login'], { replaceUrl: true }));
   }*/
 
-  changeGuide() {
+  /*changeGuide() {
     localStorage.guideEnabled = this.guideEnabled;
-  }
+  }*/
 
   updateGuide() {
-    //this.guideEnabled = localStorage.guideEnabled;
-    console.log(this.guideEnabled + ' = ' + localStorage.guideEnabled);
+    console.log(this.localguide + ' = ' + this.globalService.isGuideEnabled());
+    this.localguide = this.globalService.isGuideEnabled();
   }
   get currentLanguage(): string {
     return this.i18nService.language;
@@ -62,7 +63,11 @@ export class HeaderComponent implements OnInit {
     return credentials ? credentials.username : null;
   }*/
 
-  isGuideEnabled() {
-    return localStorage.guideEnabled;
+  get guideEnabled() {
+    return this.globalService.isGuideEnabled();
+  }
+
+  changeGuide() {
+    this.globalService.setGuideActive(this.localguide);
   }
 }

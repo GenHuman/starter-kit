@@ -8,10 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { ShellComponent } from './shell.component';
 import { HeaderComponent } from './header/header.component';
 
-import { MaterialModule } from '../material/material.module';
-
 @NgModule({
-  imports: [CommonModule, TranslateModule, NgbModule, RouterModule, MaterialModule, FormsModule],
+  imports: [CommonModule, TranslateModule, NgbModule, RouterModule, FormsModule],
   declarations: [HeaderComponent, ShellComponent]
 })
 export class ShellModule {}

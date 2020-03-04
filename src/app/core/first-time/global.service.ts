@@ -38,6 +38,15 @@ export class GlobalService {
     return !!this.config;
   }
 
+  isGuideEnabled(): boolean {
+    return this.config.guideActive;
+  }
+
+  setGuideActive(b: boolean) {
+    this._config.guideActive = b;
+    this.setConfig(this._config, true);
+  }
+
   /**
    * Gets the user config.
    * @return The user config or null if the user is not authenticated.

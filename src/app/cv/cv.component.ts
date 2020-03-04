@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { FirstTimeGuard, FirstTimeService, I18nService } from '@app/core';
 import { environment } from '@env/environment';
 
 @Component({
@@ -10,14 +10,11 @@ import { environment } from '@env/environment';
 export class CvComponent implements OnInit {
   version: string | null = environment.version;
 
-  constructor() {}
+  constructor(private i18nService: I18nService) {}
 
   ngOnInit() {}
 
-  over() {
-    console.log('madafaka');
-  }
-  out() {
-    console.log('indastreet');
+  get currentLanguage(): string {
+    return this.i18nService.language;
   }
 }
